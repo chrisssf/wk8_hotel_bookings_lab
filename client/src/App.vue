@@ -1,16 +1,19 @@
 <template>
   <div id="app">
+    <booking-form />
     <all-bookings />
   </div>
 </template>
 
 <script>
-import AllBookings from './components/AllBookings'
+import AllBookings from './components/AllBookings.vue'
+import BookingForm from './components/BookingForm.vue'
 
 export default {
   name: 'app',
   components: {
-    'all-bookings': AllBookings
+    'all-bookings': AllBookings,
+    'booking-form': BookingForm
 
   }
 }
