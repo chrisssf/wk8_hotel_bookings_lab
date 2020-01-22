@@ -5,16 +5,21 @@ db.bookings.insertMany([
   {
     name: "Daenerys Targaryen",
     email: "ilovedragons@hotmail.com",
-    status: "checked in"
+    status: "Checked in"
   },
   {
     name: "Robb Stark",
     email: "wolfman@gmail.com",
-    status: "checked in"
+    status: "Checked in"
   },
   {
     name: "Cersei Lannister",
     email: "queen99@yahoo.com",
-    status: "checked out"
+    status: "Checked in"
+  },
+  {
+    name: "Tyrion Lannister",
+    email: "thepenismightier@gmail.com",
+    status: "Checked out"
   }
 ])

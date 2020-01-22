@@ -10,8 +10,8 @@
 
       <label for="status">Status</label>
       <select id="status" v-model="status">
-        <option value=true>Checked in</option>
-        <option value=false>Checked out</option>
+        <option value="Checked in">Checked in</option>
+        <option value="Checked out">Checked out</option>
       </select>
       <input type="submit" value="Book">
     </form>
@@ -52,4 +52,13 @@ export default {
 </script>
 
 <style lang="css" scoped>
+
+div {
+  color: white;
+}
+
+label, input {
+  margin: 5px;
+}
+
 </style>

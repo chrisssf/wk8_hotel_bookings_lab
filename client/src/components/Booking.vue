@@ -1,10 +1,10 @@
 <template lang="html">
-  <div>
+    <tr>
       <td>{{ booking.name }}</td>
       <td>{{ booking.email }}</td>
       <td>{{ booking.status }}</td>
       <td> <button @click="handleDelete">Delete </button> </td>
-  </div>
+    </tr>
 </template>
 
 <script>
@@ -24,4 +24,13 @@ export default {
 </script>
 
 <style lang="css" scoped>
+
+td {
+  color: white;
+  margin: 2px;
+}
+
+tr{
+  margin: 5px;
+}
 </style>

@@ -7,9 +7,7 @@
         <th>Status</th>
         <th>Actions</th>
       </tr>
-      <tr>
         <booking v-for="booking in bookings" :booking="booking"/>
-      </tr>
   </table>
   </div>
 </template>
@@ -32,7 +30,7 @@ export default {
   mounted(){
     this.fetchBookings()
 
-    eventBus.$on('booking-added', (booking) => this.bookings.push(booking))
+    eventBus.$on('booking-added', (booking) => this.bookings.unshift(booking))
 
     eventBus.$on('delete-booking', (id) => {
       const index = this.bookings.findIndex(booking => booking._id === id)
@@ -49,4 +47,20 @@ export default {
 </script>
 
 <style lang="css" scoped>
+
+table {
+  max-width: 550px;
+  background-color: #133C55;
+  border: 1px solid #F18F01;
+  margin: 5px auto;
+}
+
+th {
+    color: #F18F01;
+}
+
+tr {
+  padding: 25px;
+}
+
 </style>
